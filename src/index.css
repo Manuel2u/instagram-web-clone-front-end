@@ -12,6 +12,27 @@ code {
     monospace;
 }
 
+
+/* add media queries so that user will get a message on screen indicating mobile version under development */
+@media (max-width: 1024px) {
+  body{
+    display: none;
+  }
+  html::after{
+    content: "Mobile version under development use desktop to view";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+  }
+}
+
+
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
