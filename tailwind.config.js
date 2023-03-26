@@ -27,7 +27,8 @@ module.exports = {
         loginptext : "#808099"
       },
       fontFamily: {
-        dodoo: ['Sacramento']
+        dodoo: ['Sacramento Billabong']
+        
       }
     },
   },
