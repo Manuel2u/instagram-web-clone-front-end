@@ -1,4 +1,140 @@
-body {
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(250, 250, 250);
+}
+
+.instagram-logo {
+  width: 175px;
+  height: 51px;
+  margin: 15px 0;
+}
+
+.facebook-logo {
+  width: 15px;
+  height: 15px;
+}
+
+.get-app-box{
+  font-size: 15px;
+}
+
+.app-store-image {
+  width: 136px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.google-play-image {
+  width: 136px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.box-1 {
+  height: 400px;
+  width: 350px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
+}
+
+.box-2{
+  height: 63px;
+  width: 350px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+input{
+  background-color: rgb(250, 250, 250);
+  font-weight: 400;
+  line-height: 18px;
+  font-size: 13px;
+  padding: 9px 0 7px 8px;
+  height: 36px;
+  width: 260px;
+  border: 0;
+  outline: none;
+  margin: 10px 0;
+  border: 1px solid rgb(219, 219, 219);
+}
+
+.login-button{
+  border-radius: 4px;
+  background-color: #0095f6;
+  color: rgb(255, 255, 255);
+  border: none;
+  width: 268px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.lines-box{
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10px;
+  font-size: 13px;
+  color: #8e8e8e;
+  font-weight: bold;
+}
+
+.line-1{
+  width: 106px;
+  height: 1px;
+  background-color: #dbdbdb;
+  margin-right: 10px;
+}
+
+.line-2{
+  width: 106px;
+  height: 1px;
+  background-color: #dbdbdb;
+  margin-left: 10px;
+}
+
+.fb-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+}
+
+.fb-link{
+  color: #385185;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.forgotten-password-link {
+  color: #385185;
+  font-size: 13px;
+}
+
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,4 +150,4 @@ code {
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
