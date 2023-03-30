@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CenterLoader } from "../utils/loaders";
-import Home from "../pages/Home";
 import NotFound from "../components/NotFound";
 
 const SignUp = React.lazy(() => import("../pages/SignUp"));
 const SignIn = React.lazy(() => import("../pages/SignIn"));
+const Home = React.lazy(() => import("../pages/Home"));
 
 function RouterConfig() {
   return (

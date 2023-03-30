@@ -1,10 +1,7 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
       sm: "340px",
@@ -15,21 +12,23 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#FC6DC1',
-        secondary: '#010024',
-        tertiary: '#FE9DE2',
-        grayStroke: '#E3E2E9',
-        about: '#F9E8EC',
-        discount: '#FE9DE2',
-        line: '#98A2B3',
-        loginbg: "#F5F7F9",
-        logintext: "#4D4C70",
-        loginptext : "#808099"
+        primary: "#2065D1",
+        secondary: "#2065D1",
+        tertiary: "#2065D1",
+        background: "#161C24",
+        darktxt: "#637381",
+        darkBlue: "#151a33",
+        skills: "#2065D129",
+        projects: "#161616",
+        darknight: "#252A2F",
       },
       fontFamily: {
-        dodoo: ['Sacramento']
-      }
+        dodoo: ["Sacramento"],
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+  ],
+};
