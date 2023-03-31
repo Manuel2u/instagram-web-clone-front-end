@@ -21,6 +21,7 @@ module.exports = {
         skills: "#2065D129",
         projects: "#161616",
         darknight: "#252A2F",
+        fb: "#0095f6",
       },
       fontFamily: {
         dodoo: ["Sacramento"],

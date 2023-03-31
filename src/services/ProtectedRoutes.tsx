@@ -1,13 +1,15 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
+import auth from "./cookie-config";
 
 type Props = {
   children: React.ReactNode;
 };
 
 export default function ProtectedRoutes({ children }: Props) {
-  if (localStorage.getItem("accessToken")) {
+  const token = auth.getCipher();
+  if (token) {
     return <>{children}</>;
   }
-  return <Navigate to="/signin" />;
+  return <Navigate to="/accounts/login" />;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CenterLoader } from "../utils/loaders";
 import NotFound from "../components/NotFound";
+import ProtectedRoutes from "../services/ProtectedRoutes";
 
 const SignUp = React.lazy(() => import("../pages/SignUp"));
 const SignIn = React.lazy(() => import("../pages/SignIn"));
@@ -15,7 +16,14 @@ function RouterConfig() {
           <Routes>
             <Route path="accounts/email/signup" element={<SignUp />} />
             <Route path="accounts/login" element={<SignIn />} />
-            <Route path="/" element={<Home />} />
+            <Route
+              path="/"
+              element={
+                <ProtectedRoutes>
+                  <Home />
+                </ProtectedRoutes>
+              }
+            />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </React.Suspense>

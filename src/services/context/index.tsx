@@ -41,7 +41,7 @@ export const UserProvider = ({ children }: Props) => {
     try {
       const token = auth.getCipher();
       const response = await Axios.get<{ dbuser: Customer }>(
-        `https://ig-clone-server.onrender.com/api/v1/auth/user`,
+        `https://ig-clone-server-2.onrender.com/api/v1/auth/user`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -58,13 +58,20 @@ export const UserProvider = ({ children }: Props) => {
   };
 
   // Signup function
-  const signup = async ({ username, email, password }: any, callback: any) => {
+  const signup = async (
+    { username, email, password, fullName }: any,
+    callback: any
+  ) => {
     try {
-      const response = await Axios.post(`https://ig-clone-server.onrender.com/api/v1/auth/signup`, {
-        username,
-        email,
-        password,
-      });
+      const response = await Axios.post(
+        `https://ig-clone-server-2.onrender.com/api/v1/auth/signup`,
+        {
+          username,
+          email,
+          password,
+          fullName,
+        }
+      );
       console.log(response.data);
       const { user, access_token } = response.data;
       auth.setCipher(access_token);
@@ -79,7 +86,7 @@ export const UserProvider = ({ children }: Props) => {
   const login = async (userData: any, callback: any) => {
     try {
       const response = await Axios.post(
-        `https://ig-clone-server.onrender.com/api/v1/auth/auth/signin`,
+        `https://ig-clone-server-2.onrender.com/api/v1/auth/signin`,
         userData
       );
       const token = response.data.user.token;
