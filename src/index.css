@@ -148,7 +148,7 @@ code {
 
 
 /* add media queries so that user will get a message on screen indicating mobile version under development */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   body{
     display: none;
   }
@@ -163,7 +163,7 @@ code {
     color: #000;
   }
 }
-
+ */
 
 
 

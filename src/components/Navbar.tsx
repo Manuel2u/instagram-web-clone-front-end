@@ -31,56 +31,56 @@ function Navbar() {
           ></path>
         </svg>
         <div className="flex flex-col justify-start gap-y-4  pl-7 ">
-          <Link to="/dashboard">
+          <Link to="/">
             <div className="flex gap-x-4 rounded-lg hover:bg-skills items-center p-3 w-48">
               <TiHome size={25} color="#000" />
 
               <p className="text-black">Home</p>
             </div>
           </Link>
-          <Link to="/create-user">
+          <Link to="/">
             <div className="flex gap-x-4  rounded-lg hover:bg-skills items-center p-3 w-48">
               <GoSearch size={25} color="#000" />
 
               <p className="text-black">Search</p>
             </div>
           </Link>
-          <Link to="/create-user">
+          <Link to="/">
             <div className="flex gap-x-4  rounded-lg hover:bg-skills items-center p-3 w-48">
               <MdOutlineExplore size={25} color="#000" />
 
               <p className="text-black">Explore</p>
             </div>
           </Link>
-          <Link to="/create-user">
+          <Link to="/">
             <div className="flex gap-x-4  rounded-lg hover:bg-skills items-center p-3 w-48">
               <BiMoviePlay size={25} color="#000" />
 
               <p className="text-black">Reels</p>
             </div>
           </Link>
-          <Link to="/create-user">
+          <Link to="/">
             <div className="flex gap-x-4  rounded-lg hover:bg-skills items-center p-3 w-48">
               <FaFacebookMessenger size={25} color="#000" />
 
               <p className="text-black">Messages</p>
             </div>
           </Link>
-          <Link to="/create-user">
+          <Link to="/">
             <div className="flex gap-x-4  rounded-lg hover:bg-skills items-center p-3 w-48">
               <AiOutlineHeart size={25} color="#000" />
 
               <p className="text-black">Notifications</p>
             </div>
           </Link>
-          <Link to="/create-user">
+          <Link to="/">
             <div className="flex gap-x-4  rounded-lg hover:bg-skills items-center p-3 w-48">
               <CgAddR size={25} color="#000" />
 
               <p className="text-black">Create</p>
             </div>
           </Link>
-          <Link to="/create-user">
+          <Link to="/">
             <div className="flex gap-x-4  rounded-lg hover:bg-skills items-center p-3 w-48">
               <BiUserCircle size={25} color="#000" />
 

@@ -170,7 +170,7 @@ function SignUp() {
         <div className="get-app-box mb-5">
           <p>Get the app.</p>
         </div>
-        <div className="app-store-google-play-box flex">
+        <div className="app-store-google-play-box flex pb-10">
           <img src={appStore} alt="AppStore" className="app-store-image" />
           <img src={playStore} alt="PlayStore" className="google-play-image" />
         </div>

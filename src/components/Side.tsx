@@ -7,7 +7,7 @@ const img4 = require("../assets/profile5.jpeg");
 function Side() {
   return (
     <>
-      <div className="mt-12">
+      <div className="sm:hidden md:block mt-12">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-2">
             <img
